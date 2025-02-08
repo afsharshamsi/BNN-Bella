@@ -2,21 +2,19 @@
 
 Reproduce our results: [GitHub](https://github.com/afsharshamsi/BNN-Bella/)
 
-Check out our paper: [BruSLeAttack: A Query-Efficient Score-Based Black-Box Sparse Adversarial Attack](https://openreview.net/forum?id=PAfnMGXief)
-
-Poster: [Poster](https://github.com/BruSLiAttack/BruSLiAttack.github.io/blob/main/asset/ICLR%202024%20-%20poster%20-%20BruSLeAttack.pdf)
+Check out our paper: [Bayesian Low-Rank LeArning (Bella)](https://arxiv.org/pdf/2407.2089)
 
 Cite our research: 
 ```
-@inproceedings{Vo2024,
-    title = {BruSLeAttack: A Query-Efficient Score-Based Black-Box Sparse Adversarial Attack},
-    year = {2024},
-    booktitle = {International Conference on Learning Representations (ICLR)},
-    author = Viet Quoc Vo and Ehsan Abbasnejad and Damith C. Ranasinghe},
+@article{doan2024bayesian,
+  title={Bayesian low-rank learning (bella): A practical approach to bayesian neural networks},
+  author={Doan, Bao Gia and Shamsi, Afshar and Guo, Xiao-Yu and Mohammadi, Arash and Alinejad-Rokny, Hamid and Sejdinovic, Dino and Ranasinghe, Damith C and Abbasnejad, Ehsan},
+  journal={arXiv preprint arXiv:2407.20891},
+  year={2024}
 }
 ```
 
 #### ABSTRACT
 
-We study the unique and less-well understood problem of generating sparse adversarial attacks simply based on observing the score-based replies to model queries. Sparse attacks aim to discover a minimum number—the l0 bounded—perturbations to model inputs to craft adversarial examples and misguide model decisions. But, in contrast to query-based dense attack counterparts against black-box models, 6 constructing sparse adversarial perturbations, even when models serve confidence score information to queries in a score-based setting, is non-trivial. Because such an attack leads to: i) an NP-hard problem; and ii) a non-differentiable search space. We develop the BruSLeAttack—a new algorithm for the problem and evaluate against Convolutional Neural Networks, Vision Transformers, recent Stylized ImageNet models, defense methods and Machine Learning as a Service (MLaaS) offerings exemplified by Google Cloud Vision. The proposed attack scales to achieve state-of-the-art attack success rates and query efficiency on standard computer visions tasks such as ImageNet across various models. Importantly, our highly query-efficient algorithm facilitates faster evaluation of model vulnerabilities and raises questions regarding the safety, security and reliability of deployed systems.
+Bayesian learning has demonstrated merits in robustness and resilience to unseen and out-of-distribution inputs, yet its adoption in large-scale tasks remains limited. In particular, deep ensemble methods (Seligmann et al. 2024; Lakshminarayanan, Pritzel, and Blundell 2017) have proven to be highly effective, but they suffer from a high computational cost. This paper introduces an alternative framework that mitigates the computational burden of ensemble Bayesian deep learning. The approach is inspired by the recent success of low-rank adapters and is named Bayesian Low-Rank LeArning (Bella). We show that (1) Bella achieves a dramatic reduction in the number of trainable parameters required to approximate a Bayesian posterior; and (2) it not only maintains, but in some instances surpasses the performance—in accuracy and outof-distribution generalisation—of conventional Bayesian and non-Bayesian methods. An extensive empirical evaluation on large-scale tasks (ImageNet, CAMELYON17, DomainNet, VQA) with CLIP and LLaVA demonstrates the effectiveness and versatility of Bella in building scalable and Bayesian deep models for real-world applications.
 
