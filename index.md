@@ -2,7 +2,7 @@
 
 Reproduce our results: [GitHub](https://github.com/afsharshamsi/BNN-Bella/)
 
-Check out our paper: [Bayesian Low-Rank LeArning (Bella)](https://arxiv.org/pdf/2407.2089)
+Check out our paper: [Bayesian Low-Rank LeArning (Bella)](https://arxiv.org/pdf/2407.20891)
 
 Cite our research: 
 ```
